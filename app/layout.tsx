@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Work_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "./component/Navbar";
+import Footer from "./component/Footer";
 
 // Primary Font - Work Sans (similar to FIVO Sans)
 // Note: If you have FIVO Sans font files, we can use localFont instead
@@ -36,6 +37,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
