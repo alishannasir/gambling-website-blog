@@ -28,18 +28,12 @@ export default function GamesPage() {
         <main className="min-h-screen bg-background text-secondary pb-20 overflow-x-hidden pt-24">
 
             {/* Hero Section */}
-            <section className="relative px-4 mb-20">
+            <section className="relative px-4 mb-10">
                 <div className="container mx-auto max-w-7xl">
-                    <div className="border-4 border-secondary p-8 md:p-16 rounded-3xl bg-white shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] relative overflow-hidden text-center transform hover:scale-[1.01] transition-transform duration-500">
-                        {/* Decorative Background Elements */}
-                        <div className="absolute top-0 left-0 w-32 h-32 bg-secondary/10 rounded-br-full z-0"></div>
-                        <div className="absolute bottom-0 right-0 w-48 h-48 bg-primary/10 rounded-tl-full z-0"></div>
-
+                    <div className="relative overflow-hidden text-center p-8 md:p-16">
                         <div className="relative z-10">
-                            <h1 className="text-5xl md:text-7xl lg:text-9xl font-primary font-bold uppercase leading-none mb-6 text-secondary mix-blend-multiply">
+                            <h1 className="text-5xl md:text-7xl lg:text-9xl font-primary font-bold uppercase leading-none mb-6 text-secondary">
                                 Let's Play<br />
-                                <span className="text-primary text-stroke-2 md:text-stroke-3 text-transparent">Earn What</span><br />
-                                Get What We Deserve
                             </h1>
                             <p className="text-xl md:text-2xl font-secondary font-medium text-secondary/70 max-w-2xl mx-auto mb-10">
                                 Explore our massive collection of premium games.

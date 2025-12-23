@@ -73,6 +73,27 @@ export default function Hero() {
       <svg className="absolute top-1/4 right-1/4 w-32 h-32 text-secondary/10 -z-0 rotate-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M10 10C30 40 70 10 90 90" stroke="currentColor" strokeWidth="2" />
       </svg>
+
+      {/* Animated Dollar Cash Element */}
+      <div className="absolute bottom-10 right-10 md:bottom-20 md:right-20 z-20 animate-bounce duration-[3000ms]">
+        <div className="relative w-32 h-32 md:w-48 md:h-48 transform rotate-12 hover:rotate-0 transition-transform duration-500 cursor-pointer group">
+          <div className="absolute inset-0 bg-secondary rounded-xl transform translate-x-3 translate-y-3 p-1"></div>
+          <div className="absolute inset-0 bg-white border-4 border-secondary rounded-xl flex items-center justify-center overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1580519542036-c47de6196ba5?w=500&h=500&fit=crop"
+              alt="Dollar Cash"
+              className="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 flex items-center justify-center font-primary font-bold text-6xl text-white drop-shadow-[4px_4px_0_rgba(0,0,0,1)] mix-blend-hard-light opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              $
+            </div>
+          </div>
+          {/* Floating Banner */}
+          <div className="absolute -top-4 -right-4 bg-primary text-white font-bold uppercase text-xs px-3 py-1 border-2 border-secondary shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] transform rotate-12 group-hover:rotate-0 transition-all duration-300">
+            Win Big
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

@@ -34,6 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${workSans.variable} ${inter.variable} antialiased`}
+        suppressHydrationWarning
       >
         <Navbar />
         {children}

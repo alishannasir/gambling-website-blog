@@ -11,7 +11,6 @@ export default function Home() {
       <ScrollingText />
       <GamesList />
       <Disclaimer />
-      <Footer />
     </main>
   );
 }
