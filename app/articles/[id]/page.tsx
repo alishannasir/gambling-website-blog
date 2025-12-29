@@ -3,6 +3,7 @@
 import React, { use } from 'react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import BackNavigation from '../../components/ui/BackNavigation';
 
 import { articles } from '../../data/articles';
 
@@ -24,6 +25,7 @@ export default function ArticlePage({ params }: { params: Promise<{ id: string }
    return (
       <main className="min-h-screen bg-background text-secondary pb-20 overflow-x-hidden pt-24">
          <div className="container mx-auto px-4 max-w-4xl">
+            <BackNavigation href="/articles" label="Back to Articles" />
 
             {/* Header Section */}
             <div className="mb-12 border-b-2 border-secondary/20 pb-8">

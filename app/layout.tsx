@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Inter, Work_Sans } from "next/font/google";
 import "./globals.css";
-import Navbar from "./component/Navbar";
-import Footer from "./component/Footer";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import LayoutWrapper from "./components/LayoutWrapper";
 
 // Primary Font - Work Sans (similar to FIVO Sans)
-// Note: If you have FIVO Sans font files, we can use localFont instead
 const workSans = Work_Sans({
   variable: "--font-fivo-sans",
   subsets: ["latin"],
@@ -37,8 +37,9 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <Navbar />
-        {children}
-        <Footer />
+        <LayoutWrapper footer={<Footer />}>
+          {children}
+        </LayoutWrapper>
       </body>
     </html>
   );

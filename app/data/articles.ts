@@ -37,7 +37,7 @@ Ultimately, gambling should remain a controlled and enjoyable activity. By using
         category: "Education",
         tags: ["responsible gambling", "player safety", "limits"],
         image:
-            "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1200&h=800&fit=crop",
+            "https://placehold.co/800x400?text=Responsible+Gambling",
         refLink: "https://example-casino.com/?ref=dummy123"
     },
     {
@@ -64,7 +64,7 @@ By understanding odds, players can choose games that align with their risk toler
         category: "Guides",
         tags: ["odds", "RTP", "house edge"],
         image:
-            "https://images.unsplash.com/photo-1518544887063-8d06e1a6c77b?w=1200&h=800&fit=crop",
+            "https://placehold.co/800x400?text=Casino+Odds",
         refLink: "https://example-casino.com/?ref=dummy123"
     },
     {
@@ -91,7 +91,7 @@ Choosing a licensed casino significantly reduces risk and ensures a safer gambli
         category: "Legal",
         tags: ["licenses", "regulation", "casino safety"],
         image:
-            "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&h=800&fit=crop"
+            "https://placehold.co/800x400?text=Casino+Licenses",
     },
     {
         id: 4,
@@ -117,7 +117,7 @@ Ultimately, bankroll management turns gambling into a structured activity rather
         category: "Education",
         tags: ["bankroll", "money management"],
         image:
-            "https://images.unsplash.com/photo-1567427018141-0584cfcbf1b8?w=1200&h=800&fit=crop"
+            "https://placehold.co/800x400?text=Bankroll+Management",
     },
     {
         id: 5,
@@ -143,7 +143,7 @@ Live casinos continue to expand and are expected to remain a major trend in onli
         category: "Trends",
         tags: ["live casino", "blackjack", "roulette"],
         image:
-            "https://images.unsplash.com/photo-1606166325695-ce4e3b2e4c9b?w=1200&h=800&fit=crop",
+            "https://placehold.co/800x400?text=Live+Dealer+Casinos",
         refLink: "https://example-casino.com/?ref=dummy123"
     },
     {
@@ -168,7 +168,7 @@ As technology advances, mobile casino experiences are becoming nearly indistingu
         category: "Mobile",
         tags: ["mobile casino", "apps", "UX"],
         image:
-            "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=1200&h=800&fit=crop"
+            "https://placehold.co/800x400?text=Mobile+Casino",
     },
     {
         id: 7,
@@ -192,7 +192,7 @@ A well-understood bonus can enhance gameplay, but misunderstanding terms often l
         category: "Guides",
         tags: ["bonuses", "wagering"],
         image:
-            "https://images.unsplash.com/photo-1556742031-c6961e8560b0?w=1200&h=800&fit=crop",
+            "https://placehold.co/800x400?text=Casino+Bonuses",
         refLink: "https://example-casino.com/?ref=dummy123"
     },
     {
@@ -215,7 +215,7 @@ Choosing between them depends on personal preferences, risk tolerance, and desir
         category: "Education",
         tags: ["slots", "table games"],
         image:
-            "https://images.unsplash.com/photo-1606166325689-9f6b2d1c4b55?w=1200&h=800&fit=crop"
+            "https://placehold.co/800x400?text=Slots+vs+Table+Games",
     },
     {
         id: 9,
@@ -235,7 +235,7 @@ Crypto casinos appeal to tech-savvy players but may not be suitable for beginner
         category: "Trends",
         tags: ["crypto", "bitcoin casino"],
         image:
-            "https://images.unsplash.com/photo-1621504450181-5d356f61d307?w=1200&h=800&fit=crop"
+            "https://placehold.co/800x400?text=Crypto+Casinos",
     },
     {
         id: 10,
@@ -257,6 +257,6 @@ By following a simple checklist, players can significantly reduce risk and enjoy
         category: "Safety",
         tags: ["casino safety", "security"],
         image:
-            "https://images.unsplash.com/photo-1581090700227-1e37b190418e?w=1200&h=800&fit=crop"
+            "https://placehold.co/800x400?text=Choosing+Safe+Casino",
     }
 ];
