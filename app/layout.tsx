@@ -12,7 +12,6 @@ const workSans = Work_Sans({
   weight: ["400", "500", "600", "700"],
   display: "swap",
 });
-
 // Secondary Font - Inter
 const inter = Inter({
   variable: "--font-inter",

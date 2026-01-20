@@ -24,7 +24,6 @@ const Sidebar = () => {
                     </div>
                 </div>
             </div>
-
             <NewsletterSignup />
 
             <AdSense slotId="sidebar-top" className="min-h-[250px]" />

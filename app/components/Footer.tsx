@@ -10,7 +10,6 @@ export default function Footer() {
             lets play.
           </h2>
         </div>
-
         {/* Main Footer Content */}
         <div className="py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* About Section */}

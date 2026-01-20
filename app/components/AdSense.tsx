@@ -30,5 +30,4 @@ const AdSense = ({ slotId, format = 'auto', style, className }: AdSenseProps) =>
         </div>
     );
 };
-
 export default AdSense;
