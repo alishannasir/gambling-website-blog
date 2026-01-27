@@ -19,7 +19,6 @@ export default function CreateArticlePage() {
             .then(res => res.json())
             .then(data => setCategories(data));
     }, []);
-
     const onContentChange = (content: string) => {
         setValue('content', content);
     };
