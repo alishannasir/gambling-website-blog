@@ -11,7 +11,6 @@ export default async function AdminDashboard() {
     if (!session) {
         redirect('/login');
     }
-
     await connectToDatabase();
 
     const totalArticles = await Article.countDocuments({});
