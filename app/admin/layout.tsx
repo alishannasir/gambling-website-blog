@@ -23,7 +23,6 @@ export default async function AdminLayout({
     if (!session && !process.env.NEXT_PUBLIC_SKIP_AUTH_CHECK) {
         // Validation logic remains same
     }
-
     const showSidebar = !!session?.user;
 
     return (
@@ -57,7 +56,6 @@ export default async function AdminLayout({
         </div>
     );
 }
-
 function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
     return (
         <Link href={href} className="flex items-center gap-3 px-4 py-3 text-sm font-bold uppercase tracking-wide text-secondary rounded-lg hover:bg-secondary hover:text-white transition-all border-2 border-transparent hover:border-secondary hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-0.5">
