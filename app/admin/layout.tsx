@@ -12,7 +12,6 @@ import Provider from '@/app/components/Provider'; // This should be a client com
 export const metadata = {
     title: 'Admin Dashboard',
 };
-
 export default async function AdminLayout({
     children,
 }: {
