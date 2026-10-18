@@ -4,7 +4,13 @@ import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import UserMenu from "./ui/UserMenu";
 
 export default async function Navbar() {
-  const session = await getServerSession(authOptions);
+  // Public pages must still render if auth is misconfigured (e.g. missing NEXTAUTH_SECRET)
+  let session = null;
+  try {
+    session = await getServerSession(authOptions);
+  } catch (error) {
+    console.error("Navbar: failed to load session", error);
+  }
 
   return (
     <>
