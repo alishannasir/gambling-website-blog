@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, Suspense } from 'react';
 import Link from 'next/link';
 import { games, gameHref } from '../data/games';
 import { categories as categoriesData } from '../data/categories';
@@ -7,7 +7,7 @@ import { useSearchParams } from 'next/navigation';
 import AdSpace from '../components/ui/AdSpace';
 import ShadowButton from '../components/ui/ShadowButton';
 
-export default function GamesPage() {
+function GamesContent() {
     const searchParams = useSearchParams();
     const categoryParam = searchParams.get('category');
     const [activeFilter, setActiveFilter] = useState(categoryParam || "All");
@@ -182,5 +182,13 @@ export default function GamesPage() {
                 </div>
             </div>
         </main>
+    );
+}
+
+export default function GamesPage() {
+    return (
+        <Suspense fallback={null}>
+            <GamesContent />
+        </Suspense>
     );
 }
