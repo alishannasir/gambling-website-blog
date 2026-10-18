@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-background px-6 py-20 pt-32 overflow-hidden">
@@ -29,12 +31,12 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 pt-6 justify-center md:justify-start">
-            <button className="px-10 py-5 bg-secondary text-background font-primary font-bold text-xl uppercase tracking-widest border-2 border-secondary shadow-[6px_6px_0px_0px_rgba(0,0,0,0.2)] hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all duration-300">
+            <Link href="#games" className="px-10 py-5 bg-secondary text-background font-primary font-bold text-xl uppercase tracking-widest border-2 border-secondary shadow-[6px_6px_0px_0px_rgba(0,0,0,0.2)] hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all duration-300">
               Browse Casino Apps
-            </button>
-            <button className="px-10 py-5 bg-transparent border-2 border-secondary text-secondary font-primary font-bold text-xl uppercase tracking-widest hover:bg-secondary hover:text-white transition-all duration-300 shadow-[6px_6px_0px_0px_rgba(0,0,0,0)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1">
+            </Link>
+            <Link href="/articles" className="px-10 py-5 bg-transparent border-2 border-secondary text-secondary font-primary font-bold text-xl uppercase tracking-widest hover:bg-secondary hover:text-white transition-all duration-300 shadow-[6px_6px_0px_0px_rgba(0,0,0,0)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1">
               Read Reviews
-            </button>
+            </Link>
           </div>
 
           {/* Trust Indicators */}
