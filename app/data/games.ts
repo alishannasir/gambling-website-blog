@@ -265,3 +265,14 @@ export const games: Game[] = [
         link: "#"
     }
 ];
+
+export const slugify = (title: string) =>
+    title
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '');
+
+export const gameHref = (game: Game) => `/games/${slugify(game.title)}`;
+
+export const getGameBySlug = (slug: string) =>
+    games.find(g => slugify(g.title) === slug);

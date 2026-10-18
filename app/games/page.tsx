@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useMemo } from 'react';
-import { games } from '../data/games';
+import Link from 'next/link';
+import { games, gameHref } from '../data/games';
 import { categories as categoriesData } from '../data/categories';
 import { useSearchParams } from 'next/navigation';
 import AdSpace from '../components/ui/AdSpace';
@@ -84,7 +85,7 @@ export default function GamesPage() {
                         {/* Games Grid */}
                         <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-4 gap-8 mb-16">
                             {visibleGames.map((game) => (
-                                <div
+                                <Link href={gameHref(game)}
                                     key={game.id}
                                     className="group cursor-pointer flex flex-col h-full bg-white"
                                 >
@@ -120,7 +121,7 @@ export default function GamesPage() {
                                             ))}
                                         </div>
                                     </div>
-                                </div>
+                                </Link>
                             ))}
                         </div>
 

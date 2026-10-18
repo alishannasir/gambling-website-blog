@@ -1,7 +1,7 @@
 import AdSense from './AdSense';
 import NewsletterSignup from './NewsletterSignup';
 import Link from 'next/link';
-import { games } from '@/app/data/games';
+import { games, gameHref } from '@/app/data/games';
 import Image from 'next/image';
 
 const Sidebar = () => {
@@ -33,7 +33,7 @@ const Sidebar = () => {
                 <h3 className="font-bold text-secondary mb-4 border-l-4 border-purple-500 pl-3">Top Rated Games</h3>
                 <div className="space-y-4">
                     {topGames.map(game => (
-                        <Link key={game.id} href="#" className="flex items-start gap-3 group">
+                        <Link key={game.id} href={gameHref(game)} className="flex items-start gap-3 group">
                             <div className="relative w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 shadow-sm border border-neutral-100">
                                 <Image src={game.image} alt={game.title} fill className="object-cover group-hover:scale-110 transition-transform" />
                             </div>
